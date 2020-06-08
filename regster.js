@@ -46,7 +46,7 @@ function test(){
         return false;
     }
     else if(str.search(/&/)==-1 && str.search(/#/)==-1 && str.search(/[*]/)==-1 && str.search(/-/)==-1 && str.search(/_/)==-1){
-        alert("passsword must have at least one special character");  
+        alert("passsword must have at least one special character like # , _ , - , * and &");  
         return false;                        
 
     }
