@@ -115,10 +115,10 @@ iframe{                                              /* the youtube vedio*/
 
 
 @media (max-width:700px){
-    iframe{
-        height: 190px;
-        width:55%;
-    }
+        iframe{
+            height: auto;
+            width:50%;
+        }
     
     .galry{
         height: auto;
