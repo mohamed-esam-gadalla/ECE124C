@@ -1,0 +1,153 @@
+    ul{
+        margin-top: 0px;                               /* navigation bar*/
+        float:left;
+        padding:0px;
+        background-color: #333;
+        margin-bottom:20px ;
+        position: sticky;
+        top:0px;
+        border-radius: 20px;
+        list-style-type: none;
+        overflow: hidden;   
+    }
+
+
+    .line{                                             /* the container carrying the house*/
+        float:left;
+    }
+    .fa-home{                                                 /* house icon*/
+        padding: 11px 16px;
+        font-size: xx-large;
+        color: rgb(187, 135, 68);
+        text-decoration: none;
+    }
+    
+    li img{                                               /*the image of the site*/
+        height: auto;
+        float:right; 
+        padding: 11px 16px; 
+        border-radius: 20px;
+
+    }
+    li a:hover{
+        color:black;
+
+    }
+    .line:hover {
+        background-color: rgb(187, 135, 68);;
+    }
+    
+    
+    
+
+
+    p.xx{                                                     /*the defenition of the part*/
+        font-size:x-large;
+        text-align: center;
+        margin-top:50px;
+    }
+    table{                                      /* the table of books*/
+        border-collapse: collapse;
+        margin: auto;
+        width:550px;
+        margin-bottom: 40px;
+        height:400px;
+
+    }
+    table,th,td{
+        border: 1px solid black;
+        text-align: center;
+        font-size: large;
+
+    }
+    a.tab{                                                 /* books name*/
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        display:block;
+    }
+    td a:hover{
+        background-color:rgb(187, 135, 68);
+    }
+    
+    
+    .orlist{     
+        margin:50px 0 0 40px;                                         /* carry the reviews*/
+     }
+    .unr{                                                          /* the div carry each review*/
+        margin-bottom:40px;
+        overflow: auto;
+    }
+    p.list{                                                      /*the title of the book in review*/
+        font-weight: bold;
+        font-size: medium; 
+    }
+    iframe{                                              /* the youtube vedio*/
+        float:right;
+        height: 170px;
+        width:200px;
+        margin-left: 5px;
+        margin-bottom: 5px;;
+    }
+    .galry{                                                     /*the link of the book image*/
+        float:right;
+        margin-left: 5px;
+        margin-bottom:5px;
+        height: 150px;
+        width:150px;
+    
+    
+    }
+    .review{                                                   /*the image of the book in review*/
+            float:right;
+            height: 100%;
+            width:100%;
+    }
+    .galry:hover{
+            height: 153px;
+            width:153px;
+    }
+    .review:hover{
+        opacity: 0.6;
+    }
+    
+    
+    
+    
+    @media (max-width:700px){
+        iframe{
+            height: 190px;
+            width:55%;
+        }
+        
+        .galry{
+            height: auto;
+            width:40%;
+        
+        }
+    
+        .review{
+            height:auto;                                   /*the image of the book in review*/
+            width:100%;
+        }
+        table{                                      /* the table of books*/
+            border-collapse: collapse;
+            margin: auto;
+            width:90%;
+            margin-bottom: 30px;
+            height:400px;
+    
+        }
+        .galry:hover{
+         width:40%;
+         height: auto;
+        }
+
+    }
+    @media (min-width:1950px){
+        .unr{
+
+            margin-bottom:50px;
+        }
+
+    }

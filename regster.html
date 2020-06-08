@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>regestration form</title>                                               
+        <link rel="icon" href="images (4).jpg">
+        <link rel="stylesheet" type="text/css" href="regst.css">                <!--the gava of the form-->
+        <script src="regster.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body >
+        <ul>
+            <li style="display: inline-block;"><a class="fas fa-home" href="index.html" title="Home"></a></li>
+            <li><img  src="images (4).jpg" width="50" ></li>                        
+        </ul> 
+      
+        
+        <form name="regester" action="mylib.php" onsubmit="return test()">
+            <h2 class="forma">regestration</h2>
+            <fieldset>
+                <legend>personal information</legend>
+                <label>first name:</label>
+                <input class="m" type="text"  id="fname" name="fname" placeholder="first name" required><span class="spa" id="namm"></span>  <!--first name-->
+                <label>second name:</label>
+                <input class="m" type="text"  id="sname" name="sname" placeholder="second name" required><span class="spa" id="nam2"></span>   <!--second name-->
+                <label>your phone:</label>
+                <input class="m" type="tel" name="tel" id="mobil" placeholder="phone" required><span class="spa" id="phon"></span>    <!--phone-->
+                <label>address:</label>
+                <input class="m" type="text"   name="add" placeholder="your address" required>                            <!--address-->
+            </fieldset>
+            <fieldset>
+                <legend>gender</legend>
+
+                <select class="l" name="gender"  required>       <!--gender-->              
+                    <option>male</option>
+                    <option>female</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>birth</legend>
+                <input class="l" type="date" id="dfg"name="date"  max="2010-1-1" required> <!--birth date-->
+            </fieldset>
+            <fieldset>
+                <legend>email&password</legend>
+                <label>email:</label>
+                <input class="m" type="email" name="e-m" placeholder=" Email" required>                     <!--email-->
+                <label>password:</label>
+                <input class="m" type="password" class="alrt" id="pass" name="pass" placeholder="Password" required><span class="spa" id="numloc"></span>  <!--password-->
+            </fieldset>
+
+            <input class="j" type="submit" value="login">                                     <!--the button of logging in-->
+            <a class="k" href="index.html">already regestered. </a>                
+        </form>
+       
+    
+    </body>
+</html>
