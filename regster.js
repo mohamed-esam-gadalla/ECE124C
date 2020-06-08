@@ -51,6 +51,7 @@ function test(){
 
     }
     else{
+        alert("you are a client in our website now press on the house to return to the home page");
         return true;
     }
 }
