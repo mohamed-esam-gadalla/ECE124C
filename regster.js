@@ -3,57 +3,50 @@ function test(){
     var str=document.getElementById("pass").value;              //the id of the password
     var fnam=document.getElementById("fname").value;             //the id of the first name
     var snam=document.getElementById("sname").value;            //the id of the second name
-    document.getElementById("phon").innerHTML="";
-    document.getElementById("numloc").innerHTML="";
-    document.getElementById("namm").innerHTML="";
-    document.getElementById("nam2").innerHTML="";
+
     if(fnam.length<2 || fnam.search(/[0-9]/)>-1){
-       document.getElementById("namm").innerHTML="write a right name";
+       alert("write a right first name");
        return false; 
     }
     else if(snam.length<2 || snam.search(/[0-9]/)>-1){
-        document.getElementById("nam2").innerHTML="write a right name";
+        alert("write a correct last name");
         return false; 
      }
 
     else if(tel.length!=11){
-        document.getElementById("phon").innerHTML="write a right phone number";  
+        alert("write a correct phone number");
         return false;
     }
     else if(tel[0].match(/0/)!="0" || tel[1].match(/1/)!="1" ){
-        document.getElementById("phon").innerHTML="write a right phone number";  
+        alert("write a correct phone number");  
         return false;                        
 
     }
     else if (isNaN(tel)){
-        document.getElementById("phon").innerHTML="write a right phone number";  
+        alert("write a correct phone number");  
         return false;                        
 
     }
     else if(str.length!=8){
-        document.getElementById("numloc").innerHTML="only 8 character";  
+        alert("password length must be only 8");  
         return false;
     }
     else if(!str[0].match(/[A-Z]/g)){
         
-        document.getElementById("numloc").innerHTML="the first charcter must be capital";
+        alert("the first charcter in the password must be capital");
         return false;
     }
 
     else if(str.search(/[0-9]/)==-1){
-        document.getElementById("numloc").innerHTML="Enter at least one digit";
-        return false;
-    }
-    else if(str.length!=8){
-        document.getElementById("numloc").innerHTML="only 8 character";  
+        alert("Enter at least one digit in the password");
         return false;
     }
     else if(str.search(/ /)!=-1){
-        document.getElementById("numloc").innerHTML="no spaces";
+        alert("no spaces in password");
         return false;
     }
-    if(str.search(/&/)==-1 && str.search(/#/)==-1 && str.search(/[*]/)==-1 && str.search(/-/)==-1 && str.search(/_/)==-1){
-        document.getElementById("numloc").innerHTML="at least one special character";  
+    else if(str.search(/&/)==-1 && str.search(/#/)==-1 && str.search(/[*]/)==-1 && str.search(/-/)==-1 && str.search(/_/)==-1){
+        alert("passsword must have at least one special character");  
         return false;                        
 
     }
