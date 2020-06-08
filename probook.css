@@ -119,29 +119,29 @@ iframe{                                              /* the youtube vedio*/
             height: auto;
             width:50%;
         }
+        
+        .galry{
+            height: auto;
+            width:40%;
+        
+        }
     
-    .galry{
-        height: auto;
-        width:40%;
+        .review{
+            height:auto;                                   /*the image of the book in review*/
+            width:100%;
+        }
+        table{                                      /* the table of books*/
+            border-collapse: collapse;
+            margin: auto;
+            width:90%;
+            margin-bottom: 30px;
+            height:auto;
     
-    }
-
-    .review{
-        height:auto;                                   /*the image of the book in review*/
-        width:100%;
-    }
-    table{                                      /* the table of books*/
-        border-collapse: collapse;
-        margin: auto;
-        width:90%;
-        margin-bottom: 30px;
-        height:400px;
-
-    }
-    .galry:hover{
-     width:40%;
-     height: auto;
-    }
+        }
+        .galry:hover{
+         width:40%;
+         height: auto;
+        }
 
 }
 @media (min-width:1950px){
