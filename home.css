@@ -134,7 +134,7 @@ div.sec{                                                  /* the div which has t
 
     }
     .def{
-        font-size: large;
+        font-size: x-large;
     }
     form{       
 
@@ -157,7 +157,7 @@ div.sec{                                                  /* the div which has t
 
     }
     .def{
-        font-size: x-large;
+        font-size: large;
     }
     form{  
         float:left;
