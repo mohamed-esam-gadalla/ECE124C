@@ -116,8 +116,8 @@
     
     @media (max-width:700px){
         iframe{
-            height: 190px;
-            width:55%;
+            height: auto;
+            width:50%;
         }
         
         .galry{
